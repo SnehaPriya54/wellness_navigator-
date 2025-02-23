@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include 'head.html' %}
+
+<body>
+    {% include 'nav.html' %}
+
+    <!-- <section id="q">
+        <div id="s">
+            <input type="file" id="image_input" accept="image/png, image/jpg" >
+            <div id="Header"></div>
+            <div id="display_image"></div>
+            <script src="script.js"></script>
+    
+        </div>
+
+    </section> -->
+        
+    <h1>Image Classifier</h1>
+    <input type="file" id="imageInput">
+    <button onclick="uploadImage()">Submit</button>
+    <div id="predictionResult"></div> 
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+
+</body>
+</html>
